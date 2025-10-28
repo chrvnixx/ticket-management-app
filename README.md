@@ -46,33 +46,6 @@ The app simulates a real-world helpdesk system, making it ideal for learning fro
 - **React Toastify**
 - **LocalStorage (for CRUD and session simulation)**
 
----
-
-## 📂 Folder Structure
-
-src/
-├── components/
-│ ├── Header.jsx
-│ ├── Footer.jsx
-│ ├── Sidebar.jsx
-│
-├── pages/
-│ ├── Login.jsx
-│ ├── Signup.jsx
-│ ├── Dashboard.jsx
-│ ├── TicketManagement.jsx
-│
-├── styles/
-│ ├── loginSignup.module.css
-│ ├── Dashboard.module.css
-│ ├── TicketManagement.module.css
-│
-├── App.jsx
-├── main.jsx
-└── index.css
-
-yaml
-Copy code
 
 ---
 
@@ -83,32 +56,24 @@ Copy code
    git clone https://github.com/yourusername/ventix.git
 Navigate to the project folder:
 
-bash
-Copy code
 cd ventix
 Install dependencies:
 
-bash
-Copy code
 npm install
 Start the development server:
 
-bash
-Copy code
 npm run dev
 🔑 Authentication Details
 Authentication is simulated using LocalStorage.
 
 Session key name: ticketapp_session.
+example login credentials : dekolaadeola@gmail.com
+password:12345678
 
 Only logged-in users can access /dashboard and /tickets.
 
 Logout clears session and redirects to /auth/login.
 
-🧹 Future Improvements
-Add search and sorting for tickets.
-
-Implement backend with API support.
 
 Add user roles (admin/staff).
 
