@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./TicketManagement.module.css";
 import Header from "../Header";
 import Footer from "../Footer";
+import { toast } from "react-toastify";
 
 const TicketManagement = () => {
     const [tickets, setTickets] = useState([]);
@@ -23,7 +24,7 @@ const TicketManagement = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!title.trim() || !description.trim()) return alert("Please fill all fields");
+        if (!title.trim() || !description.trim()) return toast("Please fill all fields");
 
         const newTicket = {
             id: Date.now(),
@@ -74,7 +75,7 @@ const TicketManagement = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Header/>
+            <Header />
             <h2>Ticket Management</h2>
             <div className={styles.layout}>
 
@@ -165,7 +166,7 @@ const TicketManagement = () => {
                     )}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };

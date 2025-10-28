@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./loginSignup.module.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import { toast } from "react-toastify";
 
 export default function Signup() {
     const navigate = useNavigate();
@@ -34,9 +35,10 @@ export default function Signup() {
         const validationErrors = validate();
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
+            toast.error("Please fix the highlighted errors.")
         } else {
             localStorage.setItem("user", JSON.stringify(formData));
-            alert("Signup successful!");
+            toast("Signup successful!");
             navigate("/login");
         }
     };
