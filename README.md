@@ -67,18 +67,14 @@ npm run dev
 Authentication is simulated using LocalStorage.
 
 Session key name: ticketapp_session.
-example login credentials : dekolaadeola@gmail.com
-password:12345678
+sign-up and log-in to access the dashboard
 
 Only logged-in users can access /dashboard and /tickets.
 
 Logout clears session and redirects to /auth/login.
 
 
-Add user roles (admin/staff).
-
 👩‍💻 Author
 Developed by Adeola Adekola
 
-📜 License
-This project is open-source and free to use for educational purposes.
+
