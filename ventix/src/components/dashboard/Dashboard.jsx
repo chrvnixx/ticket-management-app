@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../Sidebar";
-import styles from "./Dashboard.module.css";
+import styles from "./dashboard.module.css";
 import Header from "../Header";
 import Footer from "../Footer";
 
@@ -9,7 +9,7 @@ export default function Dashboard() {
 
     const handleLogout = () => {
         localStorage.removeItem("ticketapp_session");
-        navigate("/"); 
+        navigate("/");
     };
 
     return (
@@ -17,7 +17,7 @@ export default function Dashboard() {
             <Sidebar />
 
             <main className={styles.main}>
-                
+
                 <div className={styles.dashboardHeader}>
                     <h1>Welcome back!</h1>
                     <button className={styles.logoutButton} onClick={handleLogout}>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import styles from "./Dashboard/Dashboard.module.css";
+import styles from "./dashboard/dashboard.module.css";
 import logoIcon from "../assets/icons8-tickets-48.png"
 
 export default function Sidebar() {

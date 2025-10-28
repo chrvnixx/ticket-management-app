@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Dashboard.module.css";
+
+import styles from "./dashboard.module.css";
 
 export default function TicketTable({ tickets, onEdit, onDelete }) {
     return (
