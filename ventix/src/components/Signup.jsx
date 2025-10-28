@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./loginSignup.module.css";
@@ -38,7 +37,7 @@ export default function Signup() {
         } else {
             localStorage.setItem("user", JSON.stringify(formData));
             alert("Signup successful!");
-            navigate("/auth/login");
+            navigate("/login");
         }
     };
 
@@ -87,7 +86,7 @@ export default function Signup() {
                         Already have an account?{" "}
                         <span
                             className={styles.link}
-                            onClick={() => navigate("/auth/login")}
+                            onClick={() => navigate("/login")}
                         >
                             Log In
                         </span>

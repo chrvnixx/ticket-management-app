@@ -12,6 +12,7 @@ import pfp3 from "../assets/darshan-patel-QJEVpydulGs-unsplash.jpg"
 import twitterIcon from "../assets/icons8-twitter-50.png"
 import linkedinIcon from "../assets/icons8-linkedin-50.png"
 import facebookIcon from "../assets/icons8-facebook-50.png"
+import Footer from "./Footer"
 
 export default function LandingPage() {
     const navigate = useNavigate()
@@ -99,7 +100,8 @@ export default function LandingPage() {
                 </div>
             </div>
 
-            <footer >
+            <Footer />
+            {/* <footer >
                 <div className={styles.logo}>
                     <img src={logoIcon} alt="Logo" />
                     <p> <strong>Ventix</strong></p>
@@ -116,7 +118,7 @@ export default function LandingPage() {
                 </div>
                 <p className={styles.rights}>2023 Ventix All rights reserved</p>
 
-            </footer>
+            </footer> */}
         </main>
 
 
