@@ -1,0 +1,112 @@
+.header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    color: rgb(83, 83, 83);
+}
+
+.loginButton {
+    background-color: rgba(236, 236, 236, 0.404);
+    border: none;
+    border-radius: 15px;
+    padding: 7px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.getButton {
+    background-color: #40c156;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 12px;
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.getButton:hover {
+    background-color: #36a94b;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .features {
+        gap: 15px;
+        font-size: 13px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .features {
+        width: 100%;
+        justify-content: space-around;
+        font-size: 13px;
+    }
+
+    .loginButton,
+    .getButton {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .header {
+        padding: 8px 15px;
+    }
+
+    .features {
+        display: none;
+        /* hide features on very small screens */
+    }
+
+    .logo img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .loginButton,
+    .getButton {
+        font-size: 11px;
+        padding: 5px 9px;
+    }
+}

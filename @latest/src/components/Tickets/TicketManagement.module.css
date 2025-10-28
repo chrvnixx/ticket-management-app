@@ -1,0 +1,151 @@
+.wrapper {
+    padding: 2rem;
+    background: #f7f9fb;
+    min-height: 100vh;
+    color: #333;
+}
+
+.layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.createSection {
+    flex: 0.35;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.form button {
+    background: #40c156;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: #36a748;
+}
+
+.ticketSection {
+    flex: 0.65;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.topBar input {
+    flex: 1;
+    margin-right: 1rem;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+}
+
+.filters button {
+    margin-right: 8px;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filters .active {
+    background: #40c156;
+    color: white;
+    border: none;
+}
+
+.ticketCard {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ticketHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+}
+
+.status.open {
+    background: #ffb84d;
+}
+
+.status.inprogress {
+    background: #4096ff;
+}
+
+.status.closed {
+    background: #40c156;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+.statusButtons button {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.statusButtons button:hover {
+    background: #40c156;
+    color: white;
+}
+
+.editDelete button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.noTickets {
+    text-align: center;
+    padding: 3rem;
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+    margin-top: 2rem;
+}

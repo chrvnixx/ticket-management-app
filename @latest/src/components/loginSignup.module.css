@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  background-color: white;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #40c156;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #40c156;
+  outline: none;
+}
+
+.button {
+  background-color: #40c156;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #36a94b;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+.switchText {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.link {
+  color: #40c156;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboardContainer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logoutButton {
+  background-color: #40c156;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .container {
+    margin: 80px auto;
+    padding: 25px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 9px;
+  }
+
+  .switchText {
+    font-size: 12px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .container {
+    margin: 40px auto;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .input {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 8px;
+  }
+}

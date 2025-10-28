@@ -1,0 +1,100 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.privacyTerms {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.socialIconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socialIcons {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.socialIcons:hover {
+    transform: scale(1.1);
+}
+
+.rights {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .footer {
+        margin-top: 40px;
+        padding: 15px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .privacyTerms {
+        font-size: 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .socialIconsContainer {
+        gap: 8px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .logo img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .privacyTerms {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .rights {
+        font-size: 11px;
+    }
+}

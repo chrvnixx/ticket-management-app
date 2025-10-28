@@ -1,0 +1,295 @@
+/* Global container constraint */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ===== HERO SECTION ===== */
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.wavyBg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.heroSection h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.greenText {
+    color: #40c156;
+}
+
+.para1 {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.mainButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mainGetButton,
+.mainLoginButton {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.mainGetButton {
+    background-color: #40c156;
+    color: white;
+}
+
+.mainGetButton:hover {
+    background-color: #34a749;
+}
+
+.mainLoginButton {
+    background-color: white;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.15);
+}
+
+.heroSubSection {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.heroSubSection h2 {
+    font-size: 1.3rem;
+}
+
+.para2 {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ===== FEATURES ===== */
+.ftCardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+.ftCard {
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.ftCard:hover {
+    transform: translateY(-5px);
+}
+
+.ftCard img {
+    width: 28px;
+}
+
+.ftCard h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.ftCard p {
+    font-size: 0.85rem;
+    margin-top: 6px;
+    color: #444;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonies {
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 1rem;
+}
+
+.testimonies h2 {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+}
+
+.testimonyCardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
+}
+
+.testimonyCard {
+    border-radius: 15px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 260px;
+    background-color: white;
+}
+
+.pfpContainer {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.pfpContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.testimonyCard h5 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.testimonyCard p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 28px;
+}
+
+.privacyTerms {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+
+.socialIconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.socialIcons {
+    width: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.socialIcons:hover {
+    transform: scale(1.1);
+}
+
+.rights {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* ===== DECORATIVE CIRCLES ===== */
+.svgCircle {
+    position: absolute;
+    z-index: -1;
+    left: 100px;
+    top: 400px;
+    opacity: 0.3;
+}
+
+/* ======= RESPONSIVE BREAKPOINTS ======= */
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+    .heroSection h1 {
+        font-size: 2.2rem;
+        max-width: 80%;
+    }
+
+    .ftCardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .testimonyCardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .para1,
+    .para2 {
+        font-size: 1rem;
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .heroSection h1 {
+        font-size: 2.6rem;
+    }
+
+    .ftCardContainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .testimonyCardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 80px;
+        text-align: left;
+    }
+
+    .rights {
+        text-align: right;
+        flex-basis: 100%;
+    }
+}
